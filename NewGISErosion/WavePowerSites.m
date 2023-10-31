@@ -64,26 +64,34 @@ if siteFlag==15
 
 %Derniere 4
 if siteFlag==16 
-    fi = [5.5 9 44 0 0 0 0 0 0 7 4.5 ]*1000;end
+    fi = [5.5 9 44 0 0 0 0 0 0 7 4.5 0]*1000;end
 
 %Terre Marsh 5
 if siteFlag==17 
-    fi = [5.5 9 44 0 0 0 0 0 0 7 4.5 ]*1000;end
+    fi = [0 0 0 0 0.66 0.83 8.7 13.7 23.65 35.5 0 0]*1000;end
 
 %Terre Marsh 6
 if siteFlag==18 
-    fi = [5.5 9 44 0 0 0 0 0 0 7 4.5 ]*1000;end
+    fi = [0 0 0 0 2.6 1.93 1.75 11.12 7.7 40 0 0]*1000;end
 
 %Terre Marsh 7
 if siteFlag==19
-    fi = [5.5 9 44 0 0 0 0 0 0 7 4.5 ]*1000;end
+    fi = [0 0 0 0 0 0 0 2 5.4 10.57 12.76 1.11]*1000;end
 
 %Terre 5
 if siteFlag==20
-    fi = [5.5 9 44 0 0 0 0 0 0 7 4.5 ]*1000;end
+    fi = [0 0 0 0 4.1 4.18 4.88 9.42 8.23 40.93 0 0]*1000;end
 
 %Terre 6
 if siteFlag==21
-    fi = [5.5 9 44 0 0 0 0 0 0 7 4.5 ]*1000;end
+    fi = [3.3 0 0 0 0 0 0 0 0.38 11.86 41 4]*1000;end
+
+%Terre 7
+if siteFlag==22
+    fi = [0 0 0 0 0 0 3.44 5 10.26 12.75 0 0]*1000;end
+
+%Terre 7
+if siteFlag==23
+    fi = [0 0 0 0 0 0 3 4.11 9.38 11 1.65 0]*1000;end
 
 wavePower=WavePowersitesfunction(fi);

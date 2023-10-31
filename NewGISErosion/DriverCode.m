@@ -1,6 +1,6 @@
 clear;close all;clc
 
-for siteFlag = 1
+for siteFlag = 23
 
 if siteFlag==1;a=kmz2struct('SiteBreton1.kmz');end
 if siteFlag==2;a=kmz2struct('SiteBreton2.kmz');end
@@ -23,13 +23,15 @@ if siteFlag==18;a=kmz2struct('SiteTerreMarsh6.kmz');end
 if siteFlag==19;a=kmz2struct('SiteTerreMarsh7.kmz');end
 if siteFlag==20;a=kmz2struct('SiteTerre5.kmz');end
 if siteFlag==21;a=kmz2struct('SiteTerre6.kmz');end
+if siteFlag==22;a=kmz2struct('SiteTerre7.kmz');end
+if siteFlag==23;a=kmz2struct('SiteTerre8.kmz');end
 
-%GetPTS(a); %Function to display lines and select points for transects
+GetPTS(a); %Function to display lines and select points for transects
 %These points must be manually input into pointValues.m function 
 visPTS(a, siteFlag);%Function to display the lines with transects determined from points in pointValues.m
 wavePower = WavePowerSites(siteFlag) %Function containing the fetch and calculating the average wavepower of each site
 
-waveFlag = 2; %1 = Wave, 2 = No Wave
+waveFlag = 1; %1 = Wave, 2 = No Wave
 erosionPlotGiulio(waveFlag, siteFlag, a, wavePower);%Function that graphs either the wave normalized or the raw erosion plots
 %Also gives matrix(es) with erosion rates of the form [Average Mangrove Marsh]
 

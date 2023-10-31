@@ -59,6 +59,7 @@ if waveFlag == 1 %Wave Only Plotting
     xlim([1995 2023]);ylim([0 2])
     title('Wave Normalized Plot')
     %NormalizedErosionRates=[ mean(Rn(:)) mean(Rn(Vp==1))  mean(Rn(Vp==0)) ]
+
 end
 
 if waveFlag == 2 %No Wave Only Plotting
