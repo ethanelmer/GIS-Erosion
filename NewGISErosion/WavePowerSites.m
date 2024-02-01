@@ -90,8 +90,11 @@ if siteFlag==21
 if siteFlag==22
     fi = [0 0 0 0 0 0 3.44 5 10.26 12.75 0 0]*1000;end
 
-%Terre 7
+%Terre 8
 if siteFlag==23
     fi = [0 0 0 0 0 0 3 4.11 9.38 11 1.65 0]*1000;end
 
+%Terre 9
+if siteFlag==24
+    fi = [0  0   0   0   0   0   0   1.22  2  11  13  2.9]*1000;end
 wavePower=WavePowersitesfunction(fi);

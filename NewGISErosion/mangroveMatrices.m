@@ -277,3 +277,16 @@ mangroveMatrix =[
    1 1 1 1 1 1 1 
    1 1 1 1 1 2 2 
    1 1 1 1 1 2 2];end
+
+%Terre 8
+if siteFlag==24 %Extremely Sparse
+mangroveMatrix =[  
+   1 1 1 1 1   
+   1 1 1 1 1   
+   1 1 1 1 1   
+   1 1 1 1 1   
+   1 1 1 1 1   
+   1 1 1 1 1   
+   1 1 1 1 1   
+   1 1 1 1 1   
+   1 1 1 1 1  ];end
